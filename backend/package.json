@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client":"cd ../client && sudo npm start",
-    "server":"node src/index",
-    "dev":"concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "client": "cd ../client && sudo npm start",
+    "server": "node src/index",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines":{
-    "node":"8.x"
+  "engines": {
+    "node": "8.x"
   },
   "keywords": [],
   "author": "",
