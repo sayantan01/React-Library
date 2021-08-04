@@ -3,6 +3,8 @@ const app=express()
 const bodyParser=require('body-parser')
 const mongoose=require('mongoose')
 const path=require('path')
+const { MONGODB_URI } = require('./config')
+
 app.use((req,res,next)=>{
     //res.header('Access-Control-Allow-Origin','*')
     res.header()
@@ -11,7 +13,7 @@ app.use((req,res,next)=>{
 app.use(bodyParser.json())
 
 
-const uri=process.env.MONGODB_URI || "mongodb+srv://sayantan:mydatabase0@cluster0-ve4hp.gcp.mongodb.net/test?retryWrites=true&w=majority"
+const uri=process.env.MONGODB_URI || MONGODB_URI
 mongoose.connect(uri,{useNewUrlParser:true, useUnifiedTopology:true, useCreateIndex: true, useFindAndModify: false})
 mongoose.connection.once('open',()=>console.log('successfully connected to db'))
 

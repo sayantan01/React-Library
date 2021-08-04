@@ -12,7 +12,7 @@ function App(){
     <div>
       <Title title="React Library" />
       <Navbar bg="dark" variant="dark" expand="lg">
-        <Navbar.Brand href="#">React Library</Navbar.Brand>
+        <Navbar.Brand href="/">React Library</Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link href="/Add">Add</Nav.Link>
           <Nav.Link href="/Library">Library</Nav.Link>
