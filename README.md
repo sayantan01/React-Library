@@ -9,4 +9,4 @@ All the 4 components of the stack have been used here-
 4. Node for backend. 
 
 For handling the AJAX requests in React, Axios has been used
-This app is deployed on heroku. App link: https://react-library2020.herokuapp.com/Library
+This app is deployed on heroku. App link: https://react-library-2021.herokuapp.com/
